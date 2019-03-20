@@ -572,3 +572,10 @@ main{
 .no-js .inputfile + label {
     display: none;
 }
+
+/* Sazal Ahamed */
+.messages li:hover {
+    background: lavender;
+    color: #3091B2 !important;
+    cursor: pointer;
+}
