@@ -429,7 +429,9 @@ main{
 .message-sent{
     float:right;
     color:white;
+    /* color: #3c3737; */
     background-color:#70869b;
+    /* background-color:#39d2b4; */
     border-radius:0.5em 0.25em 0.25em 0.5em
 }
 .message-sent:first-child{
@@ -578,4 +580,64 @@ main{
     background: lavender;
     color: #3091B2 !important;
     cursor: pointer;
+}
+.empty-state.no-selection {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.empty-state {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+.empty-state:before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 70px;
+    margin: 0 auto 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.empty-state.no-selection:before {
+    background-image: url(../img/chat2.svg);
+}
+
+.chat-top a{
+    font-weight: bold;
+    
+}
+
+.chat-top a:hover{
+    font-weight: bold;
+    color: #44b678;
+}
+.right .username{
+    color: #3B414D;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+}
+.right .username button{
+    color: #3B414D;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+
+    font-size: 14px;
+    font-weight: 600;
 }
