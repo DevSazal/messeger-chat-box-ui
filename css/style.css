@@ -415,9 +415,11 @@ main{
 }
 .received-name-date-time{
     margin-left: 50px;
+    color: #9197a5;
+    font-size: 12px;
 }
 .received-name-date-time span{
-    font-size: 13px;
+    font-size: 10px;
     margin-left: 10px;
 }
 .message-sent p,.message-received p{
